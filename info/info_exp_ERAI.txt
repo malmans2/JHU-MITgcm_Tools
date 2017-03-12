@@ -1,0 +1,39 @@
+N  | CLASS     | VARIABLE   | DESCRIPTION                                                                 | UNITS      | DIRECTORY             
+---|-----------|------------|-----------------------------------------------------------------------------|------------------------------------
+01 | state     | Temp       | potential_temperature                                                       | degC       | /output_glued/
+02 | state     | S          | salinity	                                                                  |            | /output_glued/
+03 | state     | Eta        | free-surface_r-anomaly                                                      | m          | /output_glued/
+04 | state     | U          | zonal velocity	                                                          | m/s        | /output_glued/
+05 | state     | V          | meridional velocity                                                         | m/s        | /output_glued/
+06 | state     | W          | vertical velocity                                                           | m/s        | /output_glued/
+
+14 | MXLDEPTH  | MXLDEPTH   | Mixed-Layer Depth (>0)                                                      | m          | /output_glued/
+ 
+22 | oceSPflx  | oceSPflx   | net surface Salt flux rejected into the ocean during freezing, (+=down)     | g/m^2/s    | /output_glued/
+23 | oceSPDep  | oceSPDep   | Salt plume depth based on density criterion (>0)                            | m          | /output_glued/
+
+39 | EXFhd     | EXFhs      | Sensible heat flux into ocean, >0 increases theta                           | W/m^2      | /output_glued/
+40 | EXFhl     | EXFhl      | Latent heat flux into ocean, >0 increases theta                             | W/m^2      | /output_glued/
+41 | EXFlwnet  | EXFlwnet   | Net upward longwave radiation, >0 decreases theta                           | W/m^2      | /output_glued/
+42 | EXFswnet  | EXFswnet   | Net upward shortwave radiation, >0 decreases theta                          | W/m^2      | /output_glued/
+46 | EXFuwind  | EXFuwind   | zonal 10-m wind speed, >0 increases uVel                                    | m/s        | /output_glued/
+47 | EXFvwind  | EXFvwind   | meridional 10-m wind speed, >0 increases uVel                               | m/s        | /output_glued/
+48 | EXFatemp  | EXFatemp   | surface (2-m) air temperature                                               | degK       | /output_glued/
+49 | EXFFaqh   | EXFaqh     | surface (2-m) specific humidity                                             | kg/kg      | /output_glued/
+53 | EXFempmr  | EXFempmr   | net upward freshwater flux, > 0 increases salinity                          | N/m^2      | /output_glued/
+
+58 | SIarea    | SIarea     | SEAICE fractional ice-covered area [0 to 1]                                 | m^2/m^2    | /output_glued/
+59 | SIheff    | SIheff     | SEAICE effective ice thickness                                              | m          | /output_glued/
+60 | SIhsnow   | SIhsnow    | SEAICE effective snow thickness                                             | m          | /output_glued/
+61 | SIhsalt   | SIhsalt    | SEAICE effective salinity                                                   | g/m^2      | /output_glued/
+62 | SIuice    | SIuice     | SEAICE zonal ice velocity, >0 from West to East                             | m/s        | /output_glued/
+63 | SIvice    | SIvice     | SEAICE merid. ice velocity, >0 from South to North                          | m/s        | /output_glued/
+
+64 | phiHyd    | phiHyd     | Hydrostatic Pressure Pot.(p/rho) Anomaly                                    | m^2/s^2    | /output_glued/
+65 | phiHydLow | phiHydLow  | Depth integral of (rho -rhoconst) * g * dz / rhoconst                       | m^2/s^2    | /output_glued/
+
+66 | kpp_state | KPPviscAz  | KPP_vertical_eddy_viscosity_coefficient                                     | m^2/s      | /output_glued/
+67 | kpp_state | KPPdiffKzT | KPP_vertical_heat_diffusion_coefficient                                     | m^2/s      | /output_glued/
+68 | kpp_state | KPPdiffKzS | KPP_salt-tracer_vertical_diffusion_coefficient                              | m^2/s      | /output_glued/
+69 | kpp_state | KPPGHAT    | KPP_nonlocal_transport_coefficient                                          | s/m^2      | /output_glued/
+70 | kpp_state | KPPHBL     | KPP_boundary_layer_depth                                                    | m          | /output_glued/
