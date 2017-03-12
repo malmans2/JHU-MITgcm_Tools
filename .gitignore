@@ -1,0 +1,8 @@
+# exclude tmp files
+*~
+
+# exclude checkout
+.ipynb_checkpoints
+
+# exclude swp
+.*.swp
