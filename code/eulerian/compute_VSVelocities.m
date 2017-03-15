@@ -1,4 +1,4 @@
-function [VSVEL] = create_VSVelocities(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,plotmap,savemat,plotmean,savemovie)
+function [VSVEL] = compute_VSVelocities(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,plotmap,savemat,plotmean,savemovie)
 %
 % ==================================
 % AUTHOR: Mattia Almansi
