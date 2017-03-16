@@ -270,6 +270,8 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
                                 		msk  = grid.HFacW(Xind,Yind,Zmask);
                         		elseif mskX==0 & mskY==1
                                 		msk  = grid.HFacS(Xind,Yind,Zmask);
+					else
+						msk = grid.HFacC(Xind,Yind,Zmask);
                         		end
 
 					
@@ -336,7 +338,7 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
 		end % time
 		if interpC
                 	mskrep = repmat(msk,1,1,1,size(field,4));
-                       	field(mskrep==0) = NaN;
+			field(mskrep==0) = NaN;
                	end
 
 		% Interpolation
