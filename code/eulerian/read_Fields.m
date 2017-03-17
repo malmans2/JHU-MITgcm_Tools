@@ -202,7 +202,7 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
 								inds = ncread(ncpath,fielddims(d).Name);
 								Dims.('Y') =  grid.yg(inds);
 								mskY = 1;
-							case {'Z'}
+							case {'Z' 'Zl'}
 								Dims.('Z') =  abs(ncread(ncpath,fielddims(d).Name));
 							otherwise
 								fielddims(d).Name
