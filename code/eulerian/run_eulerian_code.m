@@ -44,7 +44,7 @@ switch option
 					       plotmap,savemat,plotmean,savemovie);	
 	case 5
 		fprintf(logID,'COMPUTE TRANSPORT THROUGH A SECTION\n',option);
-		[TRANSPORT] = compute_Transport(Temprange,Srange,Sigma0range,Time,deltaT,Depthrange,Latrange,...
+		[TRANSPORT] = compute_Transport(Temprange,Srange,Sigma0range,InOutFlow,Time,deltaT,Depthrange,Latrange,...
 					       Lonrange,plotmap,savemat,plottransp);
 	case 6
 		fprintf(logID,'CREATE HORIZONTAL SECTION\n',option);

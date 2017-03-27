@@ -1,4 +1,4 @@
-function [TRANSPORT] = compute_Transport(Temprange,Srange,Sigma0range,Time,deltaT,Depthrange,Latrange,Lonrange,plotmap,savemat,plottransp)
+function [TRANSPORT] = compute_Transport(Temprange,Srange,Sigma0range,InOutFlow,Time,deltaT,Depthrange,Latrange,Lonrange,plotmap,savemat,plottransp)
 %
 % ==================================
 % AUTHOR: Mattia Almansi
@@ -59,6 +59,10 @@ function [TRANSPORT] = compute_Transport(Temprange,Srange,Sigma0range,Time,delta
 		error('Error.\nSigma0range must be a cell array with 2 elements',1)
         elseif ~iscell(Time) | isempty(Time)
                 error('Error.\nTime must be a cell array with at least one element',1)
+	elseif ~isempty(InOutFlow) 
+		if all(InOutFlow~=[-1 1]) 
+			error('Error.\nInOutFlow must be -1, 1 or empty',1)
+		end
         elseif deltaT~=0 & length(Time)~=2
                 error('Error.\nIf deltaT is not 0, Time defines the timerange and its size must be 2',1)
         elseif rem(deltaT,infonc.deltaT)~=0
@@ -154,6 +158,11 @@ function [TRANSPORT] = compute_Transport(Temprange,Srange,Sigma0range,Time,delta
 		end
 	end
 	
+	if InOutFlow == 1
+		MASK(OrtVel<0) = 0;
+	elseif InOutFlow == -1
+		MASK(OrtVel>0) = 0;
+	end
 	Transport = OrtVel .* AREA .* MASK .*1.e-6; %SV
 	Transport = squeeze(Transport);
 	for t = 1:length(time)
