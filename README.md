@@ -10,22 +10,24 @@ The Ocean Modelling User Case consists of a set of tools that provide access to 
 ### SciServer
 1. [Register for a new SciServer account](http://portal.sciserver.org/login-portal/Account/Register) or [Log in to an existing SciServer account](http://portal.sciserver.org/login-portal/Account/Login?callbackUrl=http:%2f%2fcompute.sciserver.org%2fdashboard)
 2. Create a new container and choose:
-
-    _Image_: MATLAB R2016a
-    
-    _Public Volumes_: Ocean Circulation
+```markdown
+- _Image_: MATLAB R2016a 
+- _Public Volumes_: Ocean Circulation
+```
 3. Click on the green play button
 The workspace contains:
+```markdown
 - OceanCirculation: Read only directory containing data
 - scratch: Personal directory for storing large temporary files and output
 - persistent: Personal directory for long-term storage of relatively small files
+```
 
 ### MITgcm tools
 1. Open a new terminal (_New_ -> _Terminal_)
 2. Clone the MITgcm tools (e.g. into the persistent directory)
 ```sh
-cd /home/idies/workspace`
-git clone https://github.com/malmans2/JHU-MITgcm_Tools.git
+$ cd /home/idies/workspace`
+$ git clone https://github.com/malmans2/JHU-MITgcm_Tools.git
 ```
 
 
