@@ -11,8 +11,8 @@ The Ocean Modelling User Case consists of a set of tools that provide access to 
 1. [Register for a new SciServer account](http://portal.sciserver.org/login-portal/Account/Register) or [Log in to an existing SciServer account](http://portal.sciserver.org/login-portal/Account/Login?callbackUrl=http:%2f%2fcompute.sciserver.org%2fdashboard)
 2. Create a new container and choose:
 ```markdown
-- _Image_: MATLAB R2016a 
-- _Public Volumes_: Ocean Circulation
+- Image: MATLAB R2016a 
+- Public Volumes: Ocean Circulation
 ```
 3. Click on the green play button
 The workspace contains:
