@@ -5,6 +5,15 @@ SciServer is administrated by The Institute for Data Intensive Engineering and S
 
 The Ocean Modelling User Case consists of a set of tools that provide access to numerical models outputs resulting from high resolution Ocean General Circulation Models (GCMs) set up and run by [Prof. Thomas W. N. Haine](http://sites.krieger.jhu.edu/haine/) group (Johns Hopkins University - Department of Earth and Planetary Sciences).
 
+## Getting started
+
+# Sciserver
+1. [Register for a new SciServer account](http://portal.sciserver.org/login-portal/Account/Register) or [Log in to an existing SciServer account](http://portal.sciserver.org/login-portal/Account/Login?callbackUrl=http:%2f%2fcompute.sciserver.org%2fdashboard)
+2. Create a new container and choose:
+- _Image_: MATLAB R2016a
+- _Public Volumes_: Ocean Circulation
+3. Click on the green play button
+
 ## Example
 You can use the [editor on GitHub](https://github.com/malmans2/JHU-MITgcm_Tools/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
