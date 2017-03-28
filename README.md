@@ -14,7 +14,7 @@ The Ocean Modelling User Case consists of a set of tools that provide access to 
 - Image: MATLAB R2016a 
 - Public Volumes: Ocean Circulation
 ```
-3. `:arrow_forward:` Click on the green play button.
+3. Click on the green play button.
 
 The workspace contains:
 ```markdown
@@ -27,7 +27,7 @@ The workspace contains:
 1. Open a new terminal (_New_ -> _Terminal_)
 2. Clone the MITgcm tools (e.g. into the persistent directory)
 ```sh
-$ cd /home/idies/workspace
+$ cd /home/idies/workspace/persistent
 $ git clone https://github.com/malmans2/JHU-MITgcm_Tools.git
 ```
 
