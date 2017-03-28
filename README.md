@@ -1,6 +1,6 @@
 ## Welcome to the Scicerver Ocean Modelling User Case
 
-[SciServer](http://www.sciserver.org/) consists of integrated Tools that work together to create a full-featured system.
+[SciServer](http://www.sciserver.org/) consists of integrated tools that work together to create a full-featured system.
 SciServer is administrated by The Institute for Data Intensive Engineering and Science (idies) and The Johns Hopkins University, and is funded by National Science Fundation award ACI-1261715.
 
 The Ocean Modelling User Case consists of a set of tools that provide access to numerical models outputs resulting from high resolution Ocean General Circulation Models (GCMs) set up by [Prof. Thomas W. N. Haine](http://sites.krieger.jhu.edu/haine/) group (Johns Hopkins University - Department of Earth and Planetary Sciences).
