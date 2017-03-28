@@ -14,7 +14,7 @@ The Ocean Modelling User Case consists of a set of tools that provide access to 
 - Image: MATLAB R2016a 
 - Public Volumes: Ocean Circulation
 ```
-3. :arrow_forward: Click on the green play button.
+3. `:arrow_forward:` Click on the green play button.
 
 The workspace contains:
 ```markdown
