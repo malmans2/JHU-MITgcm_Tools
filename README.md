@@ -1,4 +1,4 @@
-## Welcome to the Scicerver Ocean Modelling User Case
+## Welcome to the SciServer Ocean Modelling User Case
 
 [SciServer](http://www.sciserver.org/) consists of integrated tools that work together to create a full-featured system.
 SciServer is administrated by The Institute for Data Intensive Engineering and Science (idies) and The Johns Hopkins University, and is funded by National Science Fundation award ACI-1261715.
