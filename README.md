@@ -23,9 +23,10 @@ The workspace contains:
 ### MITgcm tools
 1. Open a new terminal (_New_ -> _Terminal_)
 2. Clone the MITgcm tools (e.g. into the persistent directory)
-```markdown
-`cd /home/idies/workspace`
-`git clone https://github.com/malmans2/JHU-MITgcm_Tools.git`
+```sh
+cd /home/idies/workspace`
+git clone https://github.com/malmans2/JHU-MITgcm_Tools.git
+```
 
 
 
