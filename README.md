@@ -11,16 +11,16 @@ The Ocean Modelling User Case consists of a set of tools that provide access to 
 1. [Register for a new SciServer account](http://portal.sciserver.org/login-portal/Account/Register) or [Log in to an existing SciServer account](http://portal.sciserver.org/login-portal/Account/Login?callbackUrl=http:%2f%2fcompute.sciserver.org%2fdashboard)
 2. Create a new container and choose:
 ```markdown
-- Image: MATLAB R2016a
-- Public Volumes: Ocean Circulation
+- **Image**: MATLAB R2016a
+- **Public Volumes**: Ocean Circulation
 ```
 3. Click on the green play button.
 
 The workspace contains:
 ```markdown
-- OceanCirculation: Read only directory containing data.
-- scratch: Personal directory for storing large temporary files and output.
-- persistent: Personal directory for long-term storage of relatively small files.
+- **OceanCirculation**: Read only directory containing data.
+- **scratch**: Personal directory for storing large temporary files and output.
+- **persistent**: Personal directory for long-term storage of relatively small files.
 ```
 
 ### MITgcm tools
@@ -37,11 +37,11 @@ $ git pull
 ```
 MITgcm tools contains:
 ```markdown
-- code: Directory containing matlab scripts and functions. Type help function.m in matlab to get more details.
-  - eulerian: Subdirectory containing eulerian tools.
-  - lagrangian: Subdirectory containing lagrangian tools (particle tracking code - not available yet).
-- info: Directory containing description and list of available variables for each experiment.
-- notebooks: Directory containing notebooks templates that walk you through how to use our tools.
+- **code**: Directory containing matlab scripts and functions. Type help function.m in matlab to get more details.
+  - _eulerian_: Subdirectory containing eulerian tools.
+  - _lagrangian_: Subdirectory containing lagrangian tools (particle tracking code - not available yet).
+- **info**: Directory containing description and list of available variables for each experiment.
+- **notebooks**: Directory containing notebooks templates that walk you through how to use our tools.
 ```
 
 
