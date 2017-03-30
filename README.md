@@ -70,7 +70,6 @@ Almansi et al., "Variability in Circulation and Hydrography in the Denmark Strai
 #### To cite our Lagrangian Tracking Particle Code, please use this reference: 
 R. Gelderloos, A. S. Szalay, T. W. N. Haine and G. Lemson, "A fast algorithm for neutrally-buoyant Lagrangian particles in numerical ocean modeling," 2016 IEEE 12th International Conference on e-Science (e-Science), Baltimore, MD, 2016, pp. 381-388.
 doi: 10.1109/eScience.2016.7870923
-keywords: {ecology;marine systems;numerical analysis;oceanography;statistical analysis;vectors;3D along-boundary flow field;Lagrangian analysis;fast algorithm;fast particle-tracking algorithm;large-scale oceanic phenomena;multitime scale oceanic phenomena;neutrally-buoyant Lagrangian particles;numerical ocean modeling;numerical ocean simulations;parallelized;particle trajectories;simulated flow kinematics;solid boundary particle sliding;vectorized;Analytical models;Computational modeling;Graphics processing units;Interpolation;MATLAB;Oceans;Trajectory},
 URL: [http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7870923&isnumber=7870873](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7870923&isnumber=7870873)
 
 
