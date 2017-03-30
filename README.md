@@ -64,7 +64,7 @@ $ tail -f logfile
 Once you get familiar with our tools, you can easily build your own notebooks using the scripts/functions contained in [JHU-MITgcm_Tools/code](https://github.com/malmans2/JHU-MITgcm_Tools/tree/master/code).
 
 ### How to cite us:
-#### To cite our dataset please, use this reference: 
+#### To cite our dataset, please use this reference: 
 Almansi et al., in progress
 
 #### To cite our Lagrangian Tracking Particle Code, please use this reference: 
