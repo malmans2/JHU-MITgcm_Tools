@@ -78,11 +78,7 @@ URL: [http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7870923&isnumber=7
 - Mattia Almansi: mattia.almansi@jhu.edu
 - Dr. Renske Gelderloos:  rgelder2@jhu.edu 
 
-Having trouble with JHU-MITgcm_Tools or JHU-MITgcm_Tools? Contact us and we’ll help you!
+Having trouble with SciServer or JHU-MITgcm_Tools? Contact us and we’ll help you!
 The [SciServer support page](http://www.sciserver.org/support/) may be useful.
+
 JHU-MITgcm_Tools is open source: let us know if you find any bugs or if you want to share any notebooks/functions.
-
-
-
-
-
