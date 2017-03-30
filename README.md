@@ -57,7 +57,7 @@ $ cd /home/idies/workspace/persistent/Test
 $ cp  /path/of/MITgcm_Tools/notebooks/eulerian_template.ipynb mynotebook.ipynb
 ```
 4. Open your notebook (click on _persistent_ -> _Test_ -> _mynotebook.ipynb_)
-5. Now you can edit and run the notebook following the comments (you can NOT delete the first cell because it sets the environment). You can use the menu/toolbar, or you can run a single cell by selecting it and pressing Shift+Enter. Jupyter prints the outputs below every cell only when the script contained in that cell is done. If you want to monitor the progress of your notebook, use the logfile option in the first cell: e.g. set `logname = ['logfile'];` and read it through the terminal:
+5. Now you can edit the notebook following its comments (you can NOT delete the first cell because it sets the environment). You can run it using the menu/toolbar, or you can run a single cell by selecting it and pressing Shift+Enter. Jupyter prints the outputs below every cell only when the cell's script is done. If you want to monitor the progress of your notebook, use the logfile option in the first cell; e.g. set `logname = ['logfile'];` and read it through the terminal:
 ```sh
 $ tail -f logfile
 ```
@@ -79,6 +79,6 @@ URL: [http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7870923&isnumber=7
 - Dr. Renske Gelderloos:  rgelder2@jhu.edu 
 
 Having trouble with SciServer or JHU-MITgcm_Tools? Contact us and we’ll help you!
-The [SciServer support page](http://www.sciserver.org/support/) may be useful.
+The [SciServer support page](http://www.sciserver.org/support/) may also be useful.
 
 JHU-MITgcm_Tools is open source: let us know if you find any bugs or if you want to share any notebooks/functions.
