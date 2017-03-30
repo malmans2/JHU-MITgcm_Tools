@@ -35,7 +35,7 @@ $ git clone https://github.com/malmans2/JHU-MITgcm_Tools.git
 $ cd /path/of/MITgcm_Tools
 $ git pull
 ```
-MITgcm tools contains:
+[JHU-MITgcm_Tools](https://github.com/malmans2/JHU-MITgcm_Tools) contains:
 ```markdown
 - code: Directory containing matlab scripts and functions. Type help function.m in matlab to get more details.
   - eulerian: Subdirectory containing eulerian tools.
