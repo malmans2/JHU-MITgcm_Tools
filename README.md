@@ -65,7 +65,7 @@ Once you get familiar with our tools, you can easily build your own notebooks us
 
 ### How to cite us:
 #### To cite our dataset, please use this reference: 
-Almansi et al., in progress
+Almansi et al., "Variability in Circulation and Hydrography in the Denmark Strait", in progress
 
 #### To cite our Lagrangian Tracking Particle Code, please use this reference: 
 R. Gelderloos, A. S. Szalay, T. W. N. Haine and G. Lemson, "A fast algorithm for neutrally-buoyant Lagrangian particles in numerical ocean modeling," 2016 IEEE 12th International Conference on e-Science (e-Science), Baltimore, MD, 2016, pp. 381-388.
