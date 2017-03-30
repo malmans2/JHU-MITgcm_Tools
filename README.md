@@ -66,12 +66,14 @@ Once you get familiar with our tools, you can easily build your own notebooks us
 
 ### How to cite us:
 #### To cite our dataset, please use this reference: 
-Almansi et al., "Variability in Circulation and Hydrography in the Denmark Strait", in progress
+- Almansi et al., "Variability in Circulation and Hydrography in the Denmark Strait", in progress
 
-#### To cite our Lagrangian Tracking Particle Code, please use this reference: 
-R. Gelderloos, A. S. Szalay, T. W. N. Haine and G. Lemson, "A fast algorithm for neutrally-buoyant Lagrangian particles in numerical ocean modeling," 2016 IEEE 12th International Conference on e-Science (e-Science), Baltimore, MD, 2016, pp. 381-388.
+#### To cite our Lagrangian Tracking Particle Code, please use this references: 
+- R. Gelderloos, A. S. Szalay, T. W. N. Haine and G. Lemson, "A fast algorithm for neutrally-buoyant Lagrangian particles in numerical ocean modeling," 2016 IEEE 12th International Conference on e-Science (e-Science), Baltimore, MD, 2016, pp. 381-388.
 doi: 10.1109/eScience.2016.7870923
 URL: [http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7870923&isnumber=7870873](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7870923&isnumber=7870873)
+
+- M. Koszalka, I., T.N. Haine, and M.G. Magaldi, 2013: Fates and Travel Times of Denmark Strait Overflow Water in the Irminger Basin. J. Phys. Oceanogr., 43, 2611–2628, doi: 10.1175/JPO-D-13-023.1. URL: [http://journals.ametsoc.org/doi/pdf/10.1175/JPO-D-13-023.1](http://journals.ametsoc.org/doi/pdf/10.1175/JPO-D-13-023.1)
 
 
 ### Support or Contact
