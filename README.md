@@ -46,38 +46,43 @@ $ git pull
 
 
 ## Example
-You can use the [editor on GitHub](https://github.com/malmans2/JHU-MITgcm_Tools/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+1. Log in to SciServer and open a container.
+2. Open a terminal (_New_ -> _Terminal_), create a new directory and open it:
+```sh
+$ mkdir /home/idies/workspace/persistent/Test
+$ cd /home/idies/workspace/persistent/Test
 ```
+3. Copy a notebook template into the _Test_ directory:
+```sh
+$ cp  /path/of/MITgcm_Tools/notebooks/eulerian_template.ipynb mynotebook.ipynb
+```
+4. Open your notebook (click on _persistent_ -> _Test_ -> _mynotebook.ipynb_)
+5. Now you can edit and run the notebook following the comments (you can NOT delete the first cell because it sets the environment). You can use the menu/toolbar, or you can run a single cell by selecting it and pressing Shift+Enter. Jupyter prints the outputs below every cell only when the script contained in that cell is done. If you want to monitor the progress of your notebook, use the logfile option in the first cell: e.g. set `logname = ['logfile'];` and read it through the terminal:
+```sh
+$ tail -f logfile
+```
+Once you get familiar with our tools, you can easily build your own notebooks using the scripts/functions contained in [JHU-MITgcm_Tools/code](https://github.com/malmans2/JHU-MITgcm_Tools/tree/master/code).
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### How to cite us:
+#### To cite our dataset please, use this reference: 
+Almansi et al., in progress
 
-### Jekyll Themes
+#### To cite our Lagrangian Tracking Particle Code, please use this reference: 
+R. Gelderloos, A. S. Szalay, T. W. N. Haine and G. Lemson, "A fast algorithm for neutrally-buoyant Lagrangian particles in numerical ocean modeling," 2016 IEEE 12th International Conference on e-Science (e-Science), Baltimore, MD, 2016, pp. 381-388.
+doi: 10.1109/eScience.2016.7870923
+keywords: {ecology;marine systems;numerical analysis;oceanography;statistical analysis;vectors;3D along-boundary flow field;Lagrangian analysis;fast algorithm;fast particle-tracking algorithm;large-scale oceanic phenomena;multitime scale oceanic phenomena;neutrally-buoyant Lagrangian particles;numerical ocean modeling;numerical ocean simulations;parallelized;particle trajectories;simulated flow kinematics;solid boundary particle sliding;vectorized;Analytical models;Computational modeling;Graphics processing units;Interpolation;MATLAB;Oceans;Trajectory},
+URL: [http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7870923&isnumber=7870873](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7870923&isnumber=7870873)
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/malmans2/JHU-MITgcm_Tools/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
 
 ### Support or Contact
+Mattia Almansi: mattia.almansi@jhu.edu
+Dr. Renske Gelderloos:  rgelder2@jhu.edu 
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Having trouble with JHU-MITgcm_Tools or JHU-MITgcm_Tools? Contact us and we’ll help you!
+The [SciServer support page](http://www.sciserver.org/support/) may be useful.
+JHU-MITgcm_Tools is open source: let us know if you find any bugs or if you want to share any notebooks/functions.
+
+
+
+
+
