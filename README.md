@@ -57,7 +57,8 @@ $ cd /home/idies/workspace/persistent/Test
 $ cp  /path/of/MITgcm_Tools/notebooks/eulerian_template.ipynb mynotebook.ipynb
 ```
 4. Open your notebook (click on _persistent_ -> _Test_ -> _mynotebook.ipynb_)
-5. Now you can edit the notebook following its comments (you can NOT delete the first cell because it sets the environment). You can run it using the menu/toolbar, or you can run a single cell by selecting it and pressing Shift+Enter. Jupyter prints the outputs below every cell only when the cell's script is done. If you want to monitor the progress of your notebook, use the logfile option in the first cell; e.g. set `logname=['logfile'];` and read it through the terminal:
+5. Now you can edit the notebook following its comments. The first cell sets the environment and can NOT be deleted or moved because it creates variables that will be used by the other cells. The first cell also point to the directory containing the tools: choose the right path by setting `toolspath=['path/of/JHU-MITgcm_Tools']` (e.g. /home/idies/workspace/persistent/JHU-MITgcm_Tools);
+6. You can run the notebook using the menu/toolbar, or you can run a single cell by selecting it and pressing Shift+Enter. Jupyter prints the outputs below every cell only when the cell's script is done. If you want to monitor the progress of your notebook, use the logfile option in the first cell; e.g. set `logname=['logfile']` and read it through the terminal:
 ```sh
 $ tail -f logfile
 ```
