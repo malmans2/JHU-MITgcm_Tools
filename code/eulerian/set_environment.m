@@ -1,8 +1,11 @@
-% matal, Mar. 2017
-
-%=================================================
-% SET ENVIRONMENT
-%=================================================
+%
+% ==================================
+% AUTHOR: Mattia Almansi
+% EMAIL: mattia.almansi@jhu.edu
+% ==================================
+%
+% Set the environment
+%
                                                                                        
 % Set global variables                                                                                                                    
 run set_globalvars                                                                                                                        
