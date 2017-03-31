@@ -40,7 +40,7 @@ N  | CLASS     | VARIABLE   | DESCRIPTION                                       
 
 30 | DF        | DFrE_TH    | Vertical Diffusive Flux of Pot.Temperature (Explicit part)                  | degC.m^3/s | /output_glued/cropped/
 31 | DF        | DFxE_TH    | Zonal      Diffusive Flux of Pot.Temperature                                | degC.m^3/s | /output_glued/cropped/
-32 | DF	       | DFyE_TH    | Meridional Diffusive Flux of Pot.Temperature               		               | degC.m^3/s | /output_glued/cropped/
+32 | DF        | DFyE_TH    | Meridional Diffusive Flux of Pot.Temperature                                | degC.m^3/s | /output_glued/cropped/
 33 | DF        | DFrI_TH    | Vertical Diffusive Flux of Pot.Temperature (Implicit part)                  | degC.m^3/s | /output_glued/cropped/
 34 | DF        | DFrE_SLT   | Vertical Diffusive Flux of Salinity    (Explicit part)                      | psu.m^3/s  | /output_glued/cropped/
 35 | DF        | DFxE_SLT   | Zonal      Diffusive Flux of Salinity                                       | psu.m^3/s  | /output_glued/cropped/
