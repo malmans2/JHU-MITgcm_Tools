@@ -3,7 +3,7 @@ WORK IN PROGRESS: more details will be provided ASAP.
 Two experiments are available: exp_ERAI and exp_ASR.
 They have the same configuration (Almansi et al., in progress) but different surface forcings:
 - exp_ERAI: forced by the global atmospheric reanalysis ERA-Interim (Donlon et al., 2012).
-- exp_ASR:  forced by the regioanal Arctic System Reanalysis (ASRv2 - 15km; Moore et al., 2016).
+- exp_ASR:  forced by the regional Arctic System Reanalysis (ASRv2 - 15km; Moore et al., 2016).
 
 Please check [info_exp_ERAI.txt](https://github.com/malmans2/JHU-MITgcm_Tools/blob/master/info/info_exp_ERAI.txt) and [info_exp_ASR.txt](https://github.com/malmans2/JHU-MITgcm_Tools/blob/master/info/info_exp_ASR.txt) for a list of available fields/diagnostics.
 
