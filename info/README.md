@@ -7,13 +7,13 @@ exp_ASR:  forced by the regioanal Arctic System Reanalysis (ASRv2 - 15km; Moore 
 
 Please check info_exp_ASR.txt and info_exp_ERAI.txt for a list of available fields/diagnostics.
 
-exp_ERAI
+## exp_ERAI
   Domain: 47°W-1°E; 57°N-77°N
   Time: snapshots every 6h from 01-Sep-2007 to 31-Aug-2008.
         The following diagnostics are stored every day @ 00:00:00: 
         oceSPDep, oceSPflx, SIarea, SIheff, SIhsalt, SIhsnow, SIuice, SIvice 
                                                                           
-exp_ASR:
+## exp_ASR:
   Domain: 47°W-1°E; 57°N-77°N
           The domain of the following diagnostics is 13°W-22°W; 69°N-72°N:
           UVELTH, VVELTH, WVELTH, 
