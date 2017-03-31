@@ -1,6 +1,10 @@
-% This script create NetCDF informations
 %
-% matal, Feb. 2017
+% ==================================
+% AUTHOR: Mattia Almansi
+% EMAIL: mattia.almansi@jhu.edu
+% ==================================
+%
+% This script create variables containing netCDF information.
 %
 
 % Set main path
