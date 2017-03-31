@@ -5,7 +5,7 @@ They have the same configuration (Almansi et al., in progress) but different sur
 - exp_ERAI: forced by the global atmospheric reanalysis ERA-Interim (Donlon et al., 2012).
 - exp_ASR:  forced by the regioanal Arctic System Reanalysis (ASRv2 - 15km; Moore et al., 2016).
 
-Please check info_exp_ASR.txt and info_exp_ERAI.txt for a list of available fields/diagnostics.
+Please check [info_exp_ERAI.txt](https://github.com/malmans2/JHU-MITgcm_Tools/blob/master/info/info_exp_ERAI.txt) and [info_exp_ASR.txt](https://github.com/malmans2/JHU-MITgcm_Tools/blob/master/info/info_exp_ASR.txt) for a list of available fields/diagnostics.
 
 ## exp_ERAI
 - Domain: 47°W-1°E; 57°N-77°N
