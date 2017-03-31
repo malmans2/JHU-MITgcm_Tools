@@ -15,7 +15,7 @@ exp_ERAI
                                                                           
 exp_ASR:
   Domain: 47°W-1°E; 57°N-77°N
-          The domain of the following diagnostics is: 13°W-22°W; 69°N-72°N:
+          The domain of the following diagnostics is 13°W-22°W; 69°N-72°N:
           UVELTH, VVELTH, WVELTH, 
           UVELSLT, VVELSLT, WVELSLT, 
           TOTTTEND, TOTSTEND, 
