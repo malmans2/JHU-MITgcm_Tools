@@ -1,7 +1,7 @@
 WORK IN PROGRESS: more details will be provided ASAP.
 
 Two experiments are available: exp_ERAI and exp_ASR.
-They have the same configuration (Almansi et al., in progress) but different surface forcings:
+They have the same configuration (Almansi et al., in preparation) but different surface forcings:
 - exp_ERAI: forced by the global atmospheric reanalysis ERA-Interim (Donlon et al., 2012).
 - exp_ASR:  forced by the regional Arctic System Reanalysis (ASRv2 - 15km; Moore et al., 2016).
 
