@@ -3,7 +3,7 @@
 [SciServer](http://www.sciserver.org/) consists of integrated tools that work together to create a full-featured system.
 SciServer is administrated by The Institute for Data Intensive Engineering and Science (IDIES) and The Johns Hopkins University, and is funded by National Science Fundation award ACI-1261715.
 
-The Ocean Modelling User Case consists of a set of tools that provide access to numerical models outputs resulting from high resolution Ocean General Circulation Models (GCMs) set up and run by [Prof. Thomas W. N. Haine](http://sites.krieger.jhu.edu/haine/) group (Johns Hopkins University - Department of Earth and Planetary Sciences).
+The Ocean Modeling User Case consists of a set of tools that provides access to numerical model output of high-resolution Ocean General Circulation Models (GCMs) set up and run by group of [Prof. Thomas W. N. Haine](http://sites.krieger.jhu.edu/haine/) (Johns Hopkins University - Department of Earth and Planetary Sciences).
 
 ## Getting started
 
@@ -67,14 +67,14 @@ Once you get familiar with our tools, you can easily build your own notebooks us
 
 ### How to cite us:
 #### To cite our dataset, please use this reference: 
-- Almansi et al., "Variability in Circulation and Hydrography in the Denmark Strait", in progress
+- Almansi et al., "Variability in Circulation and Hydrography in the Denmark Strait", in preparation
 
 #### To cite our Lagrangian Tracking Particle Code, please use these references: 
-- R. Gelderloos, A. S. Szalay, T. W. N. Haine and G. Lemson, "A fast algorithm for neutrally-buoyant Lagrangian particles in numerical ocean modeling," 2016 IEEE 12th International Conference on e-Science (e-Science), Baltimore, MD, 2016, pp. 381-388.
+- R. Gelderloos, A. S. Szalay, T. W. N. Haine, and G. Lemson, "A fast algorithm for neutrally-buoyant Lagrangian particles in numerical ocean modeling," 2016 IEEE 12th International Conference on e-Science (e-Science), Baltimore, MD, 2016, pp. 381-388.
 doi: 10.1109/eScience.2016.7870923
 URL: [http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7870923&isnumber=7870873](http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7870923&isnumber=7870873)
 
-- M. Koszalka, I., T.N. Haine, and M.G. Magaldi, 2013: Fates and Travel Times of Denmark Strait Overflow Water in the Irminger Basin. J. Phys. Oceanogr., 43, 2611–2628, doi: 10.1175/JPO-D-13-023.1. URL: [http://journals.ametsoc.org/doi/pdf/10.1175/JPO-D-13-023.1](http://journals.ametsoc.org/doi/pdf/10.1175/JPO-D-13-023.1)
+- I. M. Koszalka, T. W. N. Haine, and M. G. Magaldi, 2013: Fates and Travel Times of Denmark Strait Overflow Water in the Irminger Basin. J. Phys. Oceanogr., 43, 2611–2628, doi: 10.1175/JPO-D-13-023.1. URL: [http://journals.ametsoc.org/doi/pdf/10.1175/JPO-D-13-023.1](http://journals.ametsoc.org/doi/pdf/10.1175/JPO-D-13-023.1)
 
 
 ### Support or Contact
