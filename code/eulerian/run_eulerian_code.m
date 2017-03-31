@@ -1,6 +1,11 @@
+%
+% ==================================
+% AUTHOR: Mattia Almansi
+% EMAIL: mattia.almansi@jhu.edu
+% ==================================
+%
 % Run the eulerian code
 %
-% matal, Feb. 2017
 
 
 % Skip if option is 0
