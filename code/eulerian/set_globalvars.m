@@ -1,6 +1,10 @@
+%
+% ==================================
+% AUTHOR: Mattia Almansi
+% EMAIL: mattia.almansi@jhu.edu
+% ==================================
+%
 % Script to create global variables
-% 
-% matal, Feb. 2017
 
 global logID
 global infonc
