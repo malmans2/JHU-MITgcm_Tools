@@ -32,7 +32,7 @@ $ git clone https://github.com/malmans2/JHU-MITgcm_Tools.git
 ```
 3. Get the latest available version:
 ```sh
-$ cd /path/of/MITgcm_Tools
+$ cd /path/of/JHU-MITgcm_Tools
 $ git pull
 ```
 [JHU-MITgcm_Tools](https://github.com/malmans2/JHU-MITgcm_Tools) contains:
