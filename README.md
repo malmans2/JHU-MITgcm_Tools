@@ -54,7 +54,7 @@ $ cd /home/idies/workspace/persistent/Test
 ```
 3. Copy a notebook template into the _Test_ directory:
 ```sh
-$ cp  /path/of/MITgcm_Tools/notebooks/eulerian_template.ipynb mynotebook.ipynb
+$ cp  /path/of/JHU-MITgcm_Tools/notebooks/eulerian_template.ipynb mynotebook.ipynb
 ```
 4. Open your notebook (click on _persistent_ -> _Test_ -> _mynotebook.ipynb_).
 5. Now you can edit the notebook following its comments. The first cell sets the environment and can NOT be deleted or moved because it creates variables that will be used by the other cells. The first cell also point to the directory containing the tools: choose the right path by setting `toolspath=['path/of/JHU-MITgcm_Tools']` (e.g. /home/idies/workspace/persistent/JHU-MITgcm_Tools).
