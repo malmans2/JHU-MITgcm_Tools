@@ -40,6 +40,7 @@ $ git pull
 - code: Directory containing matlab scripts and functions. Type help function.m in matlab to get more details.
   - eulerian: Subdirectory containing eulerian tools.
   - lagrangian: Subdirectory containing lagrangian tools (particle tracking code - not available yet).
+  - TEOS10_v3_05_5: Subdirectory containing TEOS-10 software (http://www.teos-10.org/) 
 - info: Directory containing description and list of available variables for each experiment.
 - notebooks: Directory containing notebooks templates that walk you through how to use our tools.
 ```
