@@ -1,0 +1,3 @@
+[submodule "GSW-Matlab"]
+	path = GSW-Matlab
+	url = https://github.com/TEOS-10/GSW-Matlab.git
