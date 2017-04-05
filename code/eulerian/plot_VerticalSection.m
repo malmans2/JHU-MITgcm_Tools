@@ -36,6 +36,12 @@ function plot_VerticalSection(Fields,VERTSECS,plotmean,savemovie)
 		long_name = VERTSECS.(fieldname).('long_name');
 		bathy     = VERTSECS.(fieldname).('bathy');
 		field     = VERTSECS.(fieldname).('values');
+
+		if strcmp(fieldname,'N2')
+			% Mask instabilities
+			field(field<0) = NaN;
+		end
+
 		if length(DIST)>2 & length(DEPTH)>2
 			% VERTICAL SECTION
 			if plotmean~=0 
