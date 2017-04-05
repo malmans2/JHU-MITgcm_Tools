@@ -7,6 +7,8 @@ N  | CLASS     | VARIABLE   | DESCRIPTION                                       
 05 | state     | V          | meridional velocity                                                         | m/s        | /output_glued/
 06 | state     | W          | vertical velocity                                                           | m/s        | /output_glued/
 
+13 | RHOAnoma  | RHOAnoma   | Density Anomaly (=Rho-rhoConst)                                             | kg/m^3     | /output_glued/
+
 14 | MXLDEPTH  | MXLDEPTH   | Mixed-Layer Depth (>0)                                                      | m          | /output_glued/
  
 22 | oceSPflx  | oceSPflx   | net surface Salt flux rejected into the ocean during freezing, (+=down)     | g/m^2/s    | /output_glued/
