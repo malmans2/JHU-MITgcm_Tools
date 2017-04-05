@@ -58,6 +58,7 @@ function [VERTSECS] = create_VerticalSection(Fields,Time,deltaT,Depthrange,Latra
 	% Check inputs
         checkFields        = infonc.vars.NAME;
         checkFields{end+1} = 'Sigma0';
+	checkFields{end+1} = 'N2';
         if ~iscell(Fields) | isempty(Fields)
                 error('Error.\nFields must be a cell array with at least one element',1)
         elseif ~all(ismember(Fields,checkFields))

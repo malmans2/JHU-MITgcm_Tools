@@ -55,6 +55,7 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
 	% Check inputs
 	checkFields        = infonc.vars.NAME;
 	checkFields{end+1} = 'Sigma0';
+	checkFields{end+1} = 'N2';
 	if ~iscell(Fields) | isempty(Fields)
 		error('Error.\nFields must be a cell array with at least one element',1)
 	elseif ~all(ismember(Fields,checkFields))
@@ -151,8 +152,10 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
 	for f = 1:length(Fields)
 		fieldname  = Fields{f};
 		fprintf(logID,'\n     Progress of [%s]:',fieldname);
-		% Exception Sigma0
+		% Exception Sigma0 and N2
 		if strcmp(Fields{f},'Sigma0')
+			fieldname = 'Temp';
+		elseif strcmp(Fields{f},'N2')
 			fieldname = 'Temp';
 		end		
 		fieldind   = find(strcmp(fieldname,infonc.vars.NAME));
@@ -305,7 +308,7 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
 				end
 				findt1 = 1;
 			end
-
+			
 			% Read NetCDF
 			if ~isempty(Zind)
 				start = [Xind(1) Yind(1) Zind(1) Tind1];
@@ -314,6 +317,38 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
                         		Temptmp            = ncread(ncpath,'Temp',start,count);
 					Stmp               = ncread(ncpath,'S',start,count);
 					field(:,:,:,t1:t2) = densjmd95(Stmp,Temptmp,zeros(size(Temptmp))) - 1000;
+				elseif strcmp(Fields{f},'N2')
+					if length(Zind)<2
+						error('Error. \nN2 needs at least 2 depths',1);
+					end
+					% Use teos10
+					Temptmp  = ncread(ncpath,'Temp',start,count);
+                                        Stmp     = ncread(ncpath,'S',start,count);
+					rhoNil   = 1027; % kg/m3
+					g        = 9.8156; % m/s2
+					p        = Dims.Z(Zind)*g*rhoNil * 1.e-4; % dbar
+					N2tmp    = nan(size(Temptmp));
+					LONStmp  = Dims.X(Xind); 
+					LATStmp  = Dims.Y(Yind);
+					Depthtmp = Dims.Z(Zind);
+					for this4=1:size(N2tmp,4)
+						for this2=1:size(N2tmp,2) 
+							thisT             = squeeze(Temptmp(:,this2,:,this4));
+							thisS             = squeeze(Stmp(:,this2,:,this4));
+							[SA, in_ocean]    = gsw_SA_from_SP(thisS',p,LONStmp,LATStmp(this2));
+							CT                = gsw_CT_from_pt(SA,thisT');
+							[fieldtmp, p_mid] = gsw_Nsquared(SA,CT,p,LATStmp(this2));
+							[LonOld,DepthOld] = ndgrid(LONStmp,(Depthtmp(1:end-1)+Depthtmp(2:end))/2);
+							[LonNew,DepthNew] = ndgrid(LONStmp,Depthtmp);
+							if length(LonNew)<2
+								fieldtmp          = interpn(DepthOld,fieldtmp',DepthNew);
+							else
+								fieldtmp          = interpn(LonOld,DepthOld,fieldtmp',LonNew,DepthNew);
+							end
+							N2tmp(:,this2,:,this4) = fieldtmp;
+						end
+						field(:,:,:,t1:t2) = N2tmp;
+					end
                 		else
 					field(:,:,:,t1:t2) = ncread(ncpath,fieldname,start,count);
 				end
@@ -324,6 +359,8 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
                                         Temptmp            = ncread(ncpath,'Temp',start,count);
                                         Stmp               = ncread(ncpath,'S',start,count);
                                         field(:,:,1,t1:t2) = densjmd95(Stmp,Temptmp,zeros(size(Temptmp))) - 1000;
+				elseif strcmp(Fields{f},'N2')
+					error('Error. \nN2 needs at least 2 depths',1);
 				else
                                 	field(:,:,1,t1:t2) = ncread(ncpath,fieldname,start,count);
 				end
@@ -389,6 +426,8 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
 		% Fill info
 		if strcmp(Fields{f},'Sigma0')
 			fieldname = 'Sigma0';
+		elseif strcmp(Fields{f},'N2')
+			fieldname = 'N2';
 		end
 		FIELDS.(fieldname).('values')        = field;
 		FIELDS.(fieldname).('dimensions')    = {'LON' 'LAT' 'DEPTH' 'TIME'};
@@ -401,6 +440,8 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
 		catch
 			if strcmp(Fields{f},'Sigma0')
 				FIELDS.(fieldname).('units') = 'kg/m^3';
+			elseif strcmp(Fields{f},'N2')
+				FIELDS.(fieldname).('units') = '1/s^2';
 			else
 				FIELDS.(fieldname).('units') = infonc.vars.UNITS{fieldind};
 			end
@@ -410,6 +451,8 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
                 catch
 			if strcmp(Fields{f},'Sigma0')
                                 FIELDS.(fieldname).('long_name') = 'potential density anomaly';
+			elseif strcmp(Fields{f},'N2')
+				FIELDS.(fieldname).('long_name') = 'Brunt-Vaisala Frequency';
                         else
                         	FIELDS.(fieldname).('long_name') = infonc.vars.DESCRIPTION{fieldind};
 			end
