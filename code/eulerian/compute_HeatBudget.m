@@ -107,9 +107,9 @@ function [HEATBDG] = compute_HeatBudget(Time,deltaT,Depthrange,Latrange,Lonrange
 
 	% Initialize fields
 	oldind = min(find(abs(RC)>=min(oldDepthrange)));
-	sltbdgFields = {'tendH' 'adv_hConvH' 'adv_vConvH' 'dif_vConvH' 'kpp_vConvH' 'forcH'};
-	for fld = 1:length(sltbdgFields)
-		thisField = sltbdgFields{fld};
+	heatbdgFields = {'tendH' 'adv_hConvH' 'adv_vConvH' 'dif_vConvH' 'kpp_vConvH' 'forcH'};
+	for fld = 1:length(heatbdgFields)
+		thisField = heatbdgFields{fld};
 		HEATBDG.(thisField) = [];
 	end
 	HEATBDG.('README') = 'Budget is closed if tendH=adv_hConvH+adv_vConvH+dif_vConvH+kpp_vConvH+forcH';
