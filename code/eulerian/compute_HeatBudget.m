@@ -118,7 +118,7 @@ function [HEATBDG] = compute_HeatBudget(Time,deltaT,Depthrange,Latrange,Lonrange
         HEATBDG.LAT        = YC;
         HEATBDG.TIME       = TIME;
         HEATBDG.DEPTH      = abs(RC(oldind:end-1));
-        HEATBDG.units      = 'psu/s';
+        HEATBDG.units      = 'degC/s';
         HEATBDG.mask       = hFacC;
         HEATBDG.bathy      = Depth;
 	
