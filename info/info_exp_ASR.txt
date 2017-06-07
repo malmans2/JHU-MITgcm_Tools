@@ -7,82 +7,82 @@ N  | CLASS     | VARIABLE   | DESCRIPTION                                       
 05 | state     | V          | meridional velocity                                                         | m/s        | /output_glued/
 06 | state     | W          | vertical velocity                                                           | m/s        | /output_glued/
 
-07 | VELTH     | UVELTH     | Zonal Transport of Pot Temp                                                 | degC.m/s   | /output_glued/cropped/
-08 | VELTH     | VVELTH     | Meridional Transport of Pot Temp                                            | degC.m/s   | /output_glued/cropped/
-09 | VELTH     | WVELTH     | Vertical Transport of Pot Temp                                              | degC.m/s   | /output_glued/cropped/
+07 | RHOAnoma  | RHOAnoma   | Density Anomaly (=Rho-rhoConst)                                             | kg/m^3     | /output_glued/
 
-10 | VELSLT    | UVELSLT    | Zonal Transport of Salinity                                                 | psu.m/s    | /output_glued/cropped/
-11 | VELSLT    | VVELSLT    | Meridional Transport of Salinity                                            | psu.m/s    | /output_glued/cropped/
-12 | VELSLT    | WVELSLT    | Vertical Transport of Salinity                                              | psu.m/s    | /output_glued/cropped/
-
-13 | RHOAnoma  | RHOAnoma   | Density Anomaly (=Rho-rhoConst)                                             | kg/m^3     | /output_glued/
-
-14 | MXLDEPTH  | MXLDEPTH   | Mixed-Layer Depth (>0)                                                      | m          | /output_glued/
+08 | MXLDEPTH  | MXLDEPTH   | Mixed-Layer Depth (>0)                                                      | m          | /output_glued/
  
-15 | oce       | oceTAUX    | zonal surface wind stress, >0 increases                                     | N/m^2      | /output_glued/
-16 | oce       | oceTAUY    | meridional surf. wind stress, >0                                            | N/m^2      | /output_glued/
-17 | oce       | oceFWflx   | net surface Fresh-Water flux into the ocean (+=down), >0 decreases salinity | kg/m^2/s   | /output_glued/
-18 | oce       | oceSflux   | net surface Salt flux into the ocean (+=down), >0 increases salinity        | g/m^2/s    | /output_glued/
-19 | oce       | oceQnet    | net surface heat flux into the ocean (+=down), >0 increases theta           | W/m^2      | /output_glued/
-20 | oce       | oceQsw     | net Short-Wave radiation (+=down), >0 increases theta                       | W/m^2      | /output_glued/
-21 | oce       | oceFreez   | heating from freezing of sea-water (allowFreezing=T)                        | W/m^2      | /output_glued/
-22 | oce       | oceSPflx   | net surface Salt flux rejected into the ocean during freezing, (+=down)     | g/m^2/s    | /output_glued/
-23 | oce       | oceSPDep   | Salt plume depth based on density criterion (>0)                            | m          | /output_glued/
+09 | oce       | oceTAUX    | zonal surface wind stress, >0 increases                                     | N/m^2      | /output_glued/
+10 | oce       | oceTAUY    | meridional surf. wind stress, >0                                            | N/m^2      | /output_glued/
+11 | oce       | oceFWflx   | net surface Fresh-Water flux into the ocean (+=down), >0 decreases salinity | kg/m^2/s   | /output_glued/
+12 | oce       | oceSflux   | net surface Salt flux into the ocean (+=down), >0 increases salinity        | g/m^2/s    | /output_glued/
+13 | oce       | oceQnet    | net surface heat flux into the ocean (+=down), >0 increases theta           | W/m^2      | /output_glued/
+14 | oce       | oceQsw     | net Short-Wave radiation (+=down), >0 increases theta                       | W/m^2      | /output_glued/
+15 | oce       | oceFreez   | heating from freezing of sea-water (allowFreezing=T)                        | W/m^2      | /output_glued/
+16 | oce       | oceSPflx   | net surface Salt flux rejected into the ocean during freezing, (+=down)     | g/m^2/s    | /output_glued/
+17 | oce       | oceSPDep   | Salt plume depth based on density criterion (>0)                            | m          | /output_glued/
 
-24 | RELAX     | TRELAX     | surface temperature relaxation, >0 increases theta                          | W/m^2      | /output_glued/
-25 | RELAX     | SRELAX     | surface salinity relaxation, >0 increases salt                              | g/m^2/s    | /output_glued/
+18 | RELAX     | TRELAX     | surface temperature relaxation, >0 increases theta                          | W/m^2      | /output_glued/
+19 | RELAX     | SRELAX     | surface salinity relaxation, >0 increases salt                              | g/m^2/s    | /output_glued/
 
-26 | sur       | surForcT   | model surface forcing for Temperature, >0 increases theta                   | W/m^2      | /output_glued/
-27 | sur       | surForcS   | model surface forcing for Salinity, >0 increases salinity                   | g/m^2/s    | /output_glued/
+20 | sur       | surForcT   | model surface forcing for Temperature, >0 increases theta                   | W/m^2      | /output_glued/
+21 | sur       | surForcS   | model surface forcing for Salinity, >0 increases salinity                   | g/m^2/s    | /output_glued/
 
-28 | TEND      | TOTTTEND   | Tendency of Potential Temperature                                           | psu/day    | /output_glued/cropped/
-29 | TEND      | TOTSTEND   | Tendency of Salinity                                                        | degC/day   | /output_glued/cropped/
+22 | mom       | momVort3   | 3rd component (vertical) of Vorticity                                       | s^-1       | /output_glued/
 
-30 | DF        | DFrE_TH    | Vertical Diffusive Flux of Pot.Temperature (Explicit part)                  | degC.m^3/s | /output_glued/cropped/
-31 | DF        | DFxE_TH    | Zonal      Diffusive Flux of Pot.Temperature                                | degC.m^3/s | /output_glued/cropped/
-32 | DF        | DFyE_TH    | Meridional Diffusive Flux of Pot.Temperature                                | degC.m^3/s | /output_glued/cropped/
-33 | DF        | DFrI_TH    | Vertical Diffusive Flux of Pot.Temperature (Implicit part)                  | degC.m^3/s | /output_glued/cropped/
-34 | DF        | DFrE_SLT   | Vertical Diffusive Flux of Salinity    (Explicit part)                      | psu.m^3/s  | /output_glued/cropped/
-35 | DF        | DFxE_SLT   | Zonal      Diffusive Flux of Salinity                                       | psu.m^3/s  | /output_glued/cropped/
-36 | DF        | DFyE_SLT   | Meridional Diffusive Flux of Salinity                                       | psu.m^3/s  | /output_glued/cropped/
-37 | DF        | DFrI_SLT   | Vertical Diffusive Flux of Salinity                                         | psu.m^3/s  | /output_glued/cropped/
+23 | EXF       | EXFhs      | Sensible heat flux into ocean, >0 increases theta                           | W/m^2      | /output_glued/
+24 | EXF       | EXFhl      | Latent heat flux into ocean, >0 increases theta                             | W/m^2      | /output_glued/
+25 | EXF       | EXFlwnet   | Net upward longwave radiation, >0 decreases theta                           | W/m^2      | /output_glued/
+26 | EXF       | EXFswnet   | Net upward shortwave radiation, >0 decreases theta                          | W/m^2      | /output_glued/
+27 | EXF       | EXFqnet    | Net upward heat flux (turb+rad), >0 decreases theta                         | W/m^2      | /output_glued/
+28 | EXF       | EXFtaux    | zonal surface wind stress, >0 increases uVel                                | N/m^2      | /output_glued/
+29 | EXF       | EXFtauy    | meridional surface wind stress, >0 increases vVel                           | N/m^2      | /output_glued/
+30 | EXF       | EXFuwind   | zonal 10-m wind speed, >0 increases uVel                                    | m/s        | /output_glued/
+31 | EXF       | EXFvwind   | meridional 10-m wind speed, >0 increases uVel                               | m/s        | /output_glued/
+32 | EXF       | EXFatemp   | surface (2-m) air temperature                                               | degK       | /output_glued/
+33 | EXF       | EXFaqh     | surface (2-m) specific humidity                                             | kg/kg      | /output_glued/
+34 | EXF       | EXFevap    | evaporation, > 0 increases salinity                                         | m/s        | /output_glued/
+35 | EXF       | EXFpreci   | precipitation, > 0 decreases salinity                                       | m/s        | /output_glued/
+36 | EXF       | EXFsnow    | snow precipitation, > 0 decreases salinity                                  | m/s        | /output_glued/
+37 | EXF       | EXFempmr   | net upward freshwater flux, > 0 increases salinity                          | N/m^2      | /output_glued/
+38 | EXF       | EXFpress   | atmospheric pressure field                                                  | m/s        | /output_glued/
+39 | EXF       | EXFroff    | river runoff, > 0 decreases salinity                                        | m/s        | /output_glued/
+40 | EXF       | EXFroft    | river runoff temperature                                                    | deg C      | /output_glued/
 
-38 | mom       | momVort3   | 3rd component (vertical) of Vorticity                                       | s^-1       | /output_glued/
+41 | KPP       | KPPhbl     | KPP boundary layer depth, bulk Ri criterion                                 | m          | /output_glued/
 
-39 | EXF       | EXFhs      | Sensible heat flux into ocean, >0 increases theta                           | W/m^2      | /output_glued/
-40 | EXF       | EXFhl      | Latent heat flux into ocean, >0 increases theta                             | W/m^2      | /output_glued/
-41 | EXF       | EXFlwnet   | Net upward longwave radiation, >0 decreases theta                           | W/m^2      | /output_glued/
-42 | EXF       | EXFswnet   | Net upward shortwave radiation, >0 decreases theta                          | W/m^2      | /output_glued/
-43 | EXF       | EXFqnet    | Net upward heat flux (turb+rad), >0 decreases theta                         | W/m^2      | /output_glued/
-44 | EXF       | EXFtaux    | zonal surface wind stress, >0 increases uVel                                | N/m^2      | /output_glued/
-45 | EXF       | EXFtauy    | meridional surface wind stress, >0 increases vVel                           | N/m^2      | /output_glued/
-46 | EXF       | EXFuwind   | zonal 10-m wind speed, >0 increases uVel                                    | m/s        | /output_glued/
-47 | EXF       | EXFvwind   | meridional 10-m wind speed, >0 increases uVel                               | m/s        | /output_glued/
-48 | EXF       | EXFatemp   | surface (2-m) air temperature                                               | degK       | /output_glued/
-49 | EXF       | EXFaqh     | surface (2-m) specific humidity                                             | kg/kg      | /output_glued/
-50 | EXF       | EXFevap    | evaporation, > 0 increases salinity                                         | m/s        | /output_glued/
-51 | EXF       | EXFpreci   | precipitation, > 0 decreases salinity                                       | m/s        | /output_glued/
-52 | EXF       | EXFsnow    | snow precipitation, > 0 decreases salinity                                  | m/s        | /output_glued/
-53 | EXF       | EXFempmr   | net upward freshwater flux, > 0 increases salinity                          | N/m^2      | /output_glued/
-54 | EXF       | EXFpress   | atmospheric pressure field                                                  | m/s        | /output_glued/
-55 | EXF       | EXFroff    | river runoff, > 0 decreases salinity                                        | m/s        | /output_glued/
-56 | EXF       | EXFroft    | river runoff temperature                                                    | deg C      | /output_glued/
+42 | SI        | SIarea     | SEAICE fractional ice-covered area [0 to 1]                                 | m^2/m^2    | /output_glued/
+43 | SI        | SIheff     | SEAICE effective ice thickness                                              | m          | /output_glued/
+44 | SI        | SIhsnow    | SEAICE effective snow thickness                                             | m          | /output_glued/
+45 | SI        | SIhsalt    | SEAICE effective salinity                                                   | g/m^2      | /output_glued/
+46 | SI        | SIuice     | SEAICE zonal ice velocity, >0 from West to East                             | m/s        | /output_glued/
+47 | SI        | SIvice     | SEAICE merid. ice velocity, >0 from South to North                          | m/s        | /output_glued/
 
-57 | KPP       | KPPhbl     | KPP boundary layer depth, bulk Ri criterion                                 | m          | /output_glued/
+48 | phiHyd    | phiHyd     | Hydrostatic Pressure Pot.(p/rho) Anomaly                                    | m^2/s^2    | /output_glued/
+49 | phiHydLow | phiHydLow  | Depth integral of (rho -rhoconst) * g * dz / rhoconst                       | m^2/s^2    | /output_glued/
 
-58 | SI        | SIarea     | SEAICE fractional ice-covered area [0 to 1]                                 | m^2/m^2    | /output_glued/
-59 | SI        | SIheff     | SEAICE effective ice thickness                                              | m          | /output_glued/
-60 | SI        | SIhsnow    | SEAICE effective snow thickness                                             | m          | /output_glued/
-61 | SI        | SIhsalt    | SEAICE effective salinity                                                   | g/m^2      | /output_glued/
-62 | SI        | SIuice     | SEAICE zonal ice velocity, >0 from West to East                             | m/s        | /output_glued/
-63 | SI        | SIvice     | SEAICE merid. ice velocity, >0 from South to North                          | m/s        | /output_glued/
+50 | kpp_state | KPPviscAz  | KPP_vertical_eddy_viscosity_coefficient                                     | m^2/s      | /output_glued/
+51 | kpp_state | KPPdiffKzT | KPP_vertical_heat_diffusion_coefficient                                     | m^2/s      | /output_glued/
+52 | kpp_state | KPPdiffKzS | KPP_salt-tracer_vertical_diffusion_coefficient                              | m^2/s      | /output_glued/
+53 | kpp_state | KPPGHAT    | KPP_nonlocal_transport_coefficient                                          | s/m^2      | /output_glued/
+54 | kpp_state | KPPHBL     | KPP_boundary_layer_depth                                                    | m          | /output_glued/
 
-64 | phiHyd    | phiHyd     | Hydrostatic Pressure Pot.(p/rho) Anomaly                                    | m^2/s^2    | /output_glued/
-65 | phiHydLow | phiHydLow  | Depth integral of (rho -rhoconst) * g * dz / rhoconst                       | m^2/s^2    | /output_glued/
+55 | ADV       | ADVr_TH    | Vertical   Advective Flux of Pot.Temperature                                | degC.m^3/s | /output_glued/cropped/
+56 | ADV       | ADVx_TH    | Zonal      Advective Flux of Pot.Temperature                                | degC.m^3/s | /output_glued/cropped/
+57 | ADV       | ADVy_TH    | Meridional Advective Flux of Pot.Temperature                                | degC.m^3/s | /output_glued/cropped/
+58 | ADV       | ADVr_SLT   | Vertical   Advective Flux of Salinity                                       | psu.m^3/s  | /output_glued/cropped/
+59 | ADV       | ADVx_SLT   | Zonal      Advective Flux of Salinity                                       | psu.m^3/s  | /output_glued/cropped/
+60 | ADV       | ADVy_SLT   | Meridional Advective Flux of Salinity                                       | psu.m^3/s  | /output_glued/cropped/
 
-66 | kpp_state | KPPviscAz  | KPP_vertical_eddy_viscosity_coefficient                                     | m^2/s      | /output_glued/
-67 | kpp_state | KPPdiffKzT | KPP_vertical_heat_diffusion_coefficient                                     | m^2/s      | /output_glued/
-68 | kpp_state | KPPdiffKzS | KPP_salt-tracer_vertical_diffusion_coefficient                              | m^2/s      | /output_glued/
-69 | kpp_state | KPPGHAT    | KPP_nonlocal_transport_coefficient                                          | s/m^2      | /output_glued/
-70 | kpp_state | KPPHBL     | KPP_boundary_layer_depth                                                    | m          | /output_glued/
+61 | DF        | DFrI_TH    | Vertical Diffusive Flux of Pot.Temperature (Implicit part)                  | degC.m^3/s | /output_glued/cropped/
+62 | DF        | DFrI_SLT   | Vertical Diffusive Flux of Salinity    (Implicit part)                      | psu.m^3/s  | /output_glued/cropped/
+
+63 | FLUX      | TFLUX      | total heat flux (match heat-content variations), >0 increases theta         | W/m^2      | /output_glued/cropped/
+64 | FLUX      | SFLUX      | total salt flux (match salt-content variations), >0 increases salt          | g/m^2/s    | /output_glued/cropped/
+
+65 | KPP       | KPPg_TH    | KPP non-local Flux of Pot.Temperature                                       | degC.m^3/s | /output_glued/cropped/
+66 | KPP       | KPPg_SLT   | KPP non-local Flux of Salinity                                              | psu.m^3/s  | /output_glued/cropped/
+
+67 | oceQsw    | oceQsw_AVG | net Short-Wave radiation (+=down), >0 increases theta                       | W/m^2      | /output_glued/cropped/
+68 | oceSPtnd  | oceSPtnd   | salt tendency due to salt plume flux >0 increases salinity                  | g/m^2/s    | /output_glued/cropped/
+
 

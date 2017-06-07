@@ -126,6 +126,7 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
 	clear ind1 ind2
 
 	fprintf(logID,'\n Reading MITgcm outputs:');
+
 	% Create time vector and find corresponding repository
 	if deltaT > 0
 		Times = [datenum(Time(1),'dd-mm-yyyy HH'):deltaT:datenum(Time(end),'dd-mm-yyyy HH')];
