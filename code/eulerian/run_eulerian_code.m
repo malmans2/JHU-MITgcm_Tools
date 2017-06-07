@@ -55,6 +55,12 @@ switch option
 		fprintf(logID,'CREATE HORIZONTAL SECTION\n',option);
                 [HORSECS] = create_HorizontalSection(Fields,Time,deltaT,Depth,Latrange,Lonrange,...
                                                     plotmap,savemat,plotmean,savemovie);
+	case 7
+		fprintf(logID,'COMPUTE SALINITY BUDGET\n',option);
+		[SLTBDG] = compute_SaltBudget(Time,deltaT,Depthrange,Latrange,Lonrange,plotmap,savemat);
+	case 8
+                fprintf(logID,'COMPUTE HEAT BUDGET\n',option);
+                [HEATBDG] = compute_HeatBudget(Time,deltaT,Depthrange,Latrange,Lonrange,plotmap,savemat);
 	otherwise
 		error('Error. \nOption [%d] not available',option)
 end
