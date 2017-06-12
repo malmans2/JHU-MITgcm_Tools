@@ -24,4 +24,6 @@ Please check [info_exp_ERAI.txt](https://github.com/malmans2/JHU-MITgcm_Tools/bl
   - TFLUX
   - SFLUX
   - KPPg_TH
-  - KPPg_SLT                                                                    
+  - KPPg_SLT    
+  - oceQsw_AVG
+  - oceSPtnd
