@@ -16,7 +16,7 @@ Please check [info_exp_ERAI.txt](https://github.com/malmans2/JHU-MITgcm_Tools/bl
 ## exp_ASR:
 - Domain: 47°W-1°E; 57°N-77°N
 - Time: snapshots every 6h (@ 00-06-12-18UTC) from 01-Sep-2007 to 31-Aug-2008.
-- Exceptions: the following diagnostics are averages and the domain is 13°W-22°W; 69°N-72°N (depth range is 0-700m): 
+- Exceptions: the following diagnostics are 6h averages and the domain is 13°W-22°W; 69°N-72°N (depth range is 0-700m): 
   - ADVr_TH, ADVx_TH, ADVy_TH 
   - ADVr_SLT, ADVx_SLT, ADVy_SLT
   - DFrI_TH 
