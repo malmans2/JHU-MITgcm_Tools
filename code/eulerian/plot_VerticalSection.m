@@ -149,7 +149,6 @@ function plot_VerticalSection(Fields,VERTSECS,plotmean,savemovie)
 
                         		% Create movie
 					frame = getframe(moviefig);
-                        		MOVIE(t) = frame;
 
                                 	% Clear plot
                                 	reset(h1)
@@ -236,7 +235,6 @@ function plot_VerticalSection(Fields,VERTSECS,plotmean,savemovie)
 
                                         % Create movie
                                         frame = getframe(moviefig);
-                                        MOVIE(t) = frame;
 					
                                         % Clear plot
                                         reset(h1)
@@ -349,7 +347,6 @@ function plot_VerticalSection(Fields,VERTSECS,plotmean,savemovie)
 
                                         % Create movie
                                         frame = getframe(moviefig);
-                                        MOVIE(t) = frame;
 
                                         % Clear plot
                                         reset(h1)
