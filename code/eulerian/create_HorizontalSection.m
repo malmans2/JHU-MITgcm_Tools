@@ -219,7 +219,6 @@ function [HORSECS] = create_HorizontalSection(Fields,Time,deltaT,Depth,Latrange,
                                 	h1 = pcolorm(LAT,LON,fld');
 					% Create movie
                                         frame = getframe(moviefig);
-                                        MOVIE(t) = frame;
 					% Clear plot
                                         cla
 					% Save gif
