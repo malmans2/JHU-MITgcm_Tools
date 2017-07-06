@@ -81,6 +81,14 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
 	end
 
 
+	if any(ismember(Fields,infonc.vars.CROPPED))
+		cropped = 1;
+		if ~all(ismember(Fields,infonc.vars.CROPPED))
+			error('Error.\nRead cropped files separately',1)
+		end
+	else
+		cropped = 0;
+	end
 	% Find interpolated coordinates
         [~,ind1]  = min(abs(min(Latrange)-grid.yc));
         [~,ind2]  = min(abs(max(Latrange)-grid.yc));
@@ -115,16 +123,6 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
 
 	end
 
-
-	% Find interpolated coordinates
-	[~,ind1]  = min(abs(min(Latrange)-grid.yc));
-	[~,ind2]  = min(abs(max(Latrange)-grid.yc));
-	interpLat = grid.yc(ind1:ind2);
-	[~,ind1]  = min(abs(min(Lonrange)-grid.xc));
-        [~,ind2]  = min(abs(max(Lonrange)-grid.xc));
-        interpLon = grid.xc(ind1:ind2);
-	clear ind1 ind2
-
 	fprintf(logID,'\n Reading MITgcm outputs:');
 
 	% Create time vector and find corresponding repository
@@ -137,15 +135,28 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
 		Times = datenum(Time,'dd-mm-yyyy HH');
 	end
 
-	startd = 1;
-	for t = 1:length(Times)
-		for d = startd:length(infonc.dirs.NAME)
-			if Times(t)>= infonc.dirs.FIRSTDAY{d} & Times(t)<= infonc.dirs.LASTDAY{d}
-				Dirs{t} = infonc.dirs.NAME{d};
-				startd = d;
-				break
+	if ~cropped
+		startd = 1;
+		for t = 1:length(Times)
+			for d = startd:length(infonc.dirs.NAME)
+				if Times(t)>= infonc.dirs.FIRSTDAY{d} & Times(t)<= infonc.dirs.LASTDAY{d}
+					Dirs{t} = infonc.dirs.NAME{d};
+					startd = d;
+					break
+				end
 			end
 		end
+	else
+		startd = 1;
+                for t = 1:length(Times)
+                        for d = startd:length(infonc.dirs.NAME)
+                                if Times(t)>= infonc.dirs.FIRSTDAYcropped{d} & Times(t)<= infonc.dirs.LASTDAYcropped{d}
+                                        Dirs{t} = infonc.dirs.NAME{d};
+                                        startd = d;
+                                        break
+                                end
+                        end
+                end
 	end
 	clear t d startd
 
