@@ -216,7 +216,7 @@ function [TRANSPORT] = compute_Transport(Temprange,Srange,Sigma0range,InOutFlow,
                         print(filename,'-depsc2','-r300');
                         fprintf(logID,' done in %f seconds\n',toc);
              	end
-	else
+	elseif length(time)<=1
 		fprintf(logID,'\n NO plot because only 1 timestep has been selected \n');
 	end
 
