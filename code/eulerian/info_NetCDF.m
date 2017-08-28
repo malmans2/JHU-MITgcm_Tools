@@ -21,10 +21,8 @@ elseif strcmp(machine,'datascope')
         infonc.mainpath = '/export/scratch/malmans2/exp_ERAI/';
     elseif strcmp(expname,'exp_ERAI-monthly')
 	infonc.mainpath = '/datascope/hainegroup/malmans2/exp_ASR-monthly/';
-    end
-elseif strcmp(machine,'marcc')
-    if strcmp(expname,'exp_ERAI-monthly')
-        infonc.mainpath = '~/work/malmans2/exp_ASR-monthly/';
+    elseif strcmp(expname,'exp_ERAI-renske')
+	infonc.mainpath = '/datascope/hainegroup/malmans2/exp_ERAI-renske/';
     end
 else
     error('Error.\nMachine %s NOT available',machine);
