@@ -20,7 +20,7 @@ elseif strcmp(machine,'datascope')
     elseif strcmp(expname,'exp_ERAI')
         infonc.mainpath = '/export/scratch/malmans2/exp_ERAI/';
     elseif strcmp(expname,'exp_ERAI-monthly')
-	infonc.mainpath = '/datascope/hainegroup/malmans2/exp_ASR-monthly/';
+	infonc.mainpath = '/datascope/hainegroup/malmans2/exp_ERAI-monthly/';
     elseif strcmp(expname,'exp_ERAI-renske')
 	infonc.mainpath = '/datascope/hainegroup/malmans2/exp_ERAI-renske/';
     end
