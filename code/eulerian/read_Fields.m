@@ -430,9 +430,11 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
                                 field                    = interpn(LON,LAT,DEPTH,TIME,squeeze(field),iLON,iLAT,iDEPTH,iTIME);
                                 field                    = reshape(field,size(field,1),size(field,2),size(field,3),size(field,4));
 			end
-			[LON,LAT]   = ndgrid(lon,lat);
+			lonbathy = Dims.X(Xbathy);
+			latbathy = Dims.Y(Ybathy);
+			[LONbathy,LATbathy] = ndgrid(lonbathy,latbathy);
 			[iLON,iLAT] = ndgrid(interpLon,interpLat);
-			bathy       = interpn(LON,LAT,squeeze(bathy),iLON,iLAT);	
+			bathy       = interpn(LONbathy,LATbathy,squeeze(bathy),iLON,iLAT);	
 			lon = interpLon;
 			lat = interpLat;
 			mskX = 0;
