@@ -278,7 +278,11 @@ function [FIELDS] = read_Fields(Fields,Time,deltaT,Depthrange,Latrange,Lonrange,
                         		end
 
 					% Find bathy and mask
-					bathy = grid.Depth(Xind,Yind);
+					Xbathy = Xind;
+					Ybathy = Yind;
+					Xbathy(Xbathy>size(grid.Depth,1)) = [];
+					Ybathy(Ybathy>size(grid.Depth,2)) = [];
+					bathy = grid.Depth(Xbathy,Ybathy);
 					if mskX==0 & mskY==0
                                 		msk  = grid.HFacC(Xind,Yind,Zmask);
                         		elseif mskX==1 & mskY==0
