@@ -3,7 +3,7 @@
 [SciServer](http://www.sciserver.org/) consists of integrated tools that work together to create a full-featured system.
 SciServer is administrated by The Institute for Data Intensive Engineering and Science (IDIES) and The Johns Hopkins University, and is funded by National Science Fundation award ACI-1261715.
 
-The Ocean Modeling User Case consists of a set of tools that provides access to numerical model output of high-resolution Ocean General Circulation Models (GCMs) set up and run by group of [Prof. Thomas W. N. Haine](http://sites.krieger.jhu.edu/haine/) (Johns Hopkins University - Department of Earth and Planetary Sciences).
+The Ocean Modeling User Case consists of a set of tools that provides access to numerical model output of high-resolution Ocean General Circulation Models (GCMs) set up and run by the research group of [Prof. Thomas W. N. Haine](http://sites.krieger.jhu.edu/haine/) (Johns Hopkins University - Department of Earth and Planetary Sciences).
 
 ## Getting started
 
