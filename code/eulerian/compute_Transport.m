@@ -5,7 +5,7 @@ function [TRANSPORT] = compute_Transport(Temprange,Srange,Sigma0range,InOutFlow,
 % EMAIL: mattia.almansi@jhu.edu
 % ==================================
 %
-% Compute transport through a sections
+% Compute transport through a sections and cross-sectional area
 %
 % INPUT:
 %       Temprange:   Cell array containing temperature limits
@@ -46,6 +46,8 @@ function [TRANSPORT] = compute_Transport(Temprange,Srange,Sigma0range,InOutFlow,
 %                 e.g. TRANSPORT.values
 %			        .TIME
 %                               .units
+%                               .cross_sectional_area
+%                               .units_area
 
 	% Set global variables 
         run set_globalvars
@@ -165,12 +167,16 @@ function [TRANSPORT] = compute_Transport(Temprange,Srange,Sigma0range,InOutFlow,
 	end
 	Transport = OrtVel .* AREA .* MASK .*1.e-6; %SV
 	Transport = squeeze(Transport);
+	AREAmask  = AREA .* MASK;
 	for t = 1:length(time)
 		thistran                  = Transport(:,:,t);
+		thisarea                  = AREAmask(:,:,t);
 		TRANSPORT.('values')(t,:) = nansum(thistran(:));
+		TRANSPORT.('cross_sectional_area')(t,:)   = nansum(thisarea(:));
 	end
 	TRANSPORT.('TIME')  = time;
 	TRANSPORT.('units') = 'Sv';
+	TRANSPORT.('area_units') = 'm^2';
 
 
 	% Save fields
