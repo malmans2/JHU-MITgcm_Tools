@@ -65,7 +65,7 @@ $ cp  /path/of/JHU-MITgcm_Tools/notebooks/eulerian_template.ipynb mynotebook.ipy
 $ tail -f logfile
 ```
 Once you get familiar with our tools, you can easily build your own notebooks using the scripts/functions contained in [JHU-MITgcm_Tools/code](https://github.com/malmans2/JHU-MITgcm_Tools/tree/master/code).
-For example, the directory "[notebooks](https://github.com/malmans2/JHU-MITgcm_Tools/tree/master/notebooks)" contains notebooks to reproduce the figures in our papers.
+For example, che the [notebooks](https://github.com/malmans2/JHU-MITgcm_Tools/tree/master/notebooks) directory to reproduce the figures in our papers.
 
 ### How to cite us:
 #### To cite our dataset, please use this reference: 
