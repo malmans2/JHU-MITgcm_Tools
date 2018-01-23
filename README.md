@@ -69,7 +69,8 @@ For example, check the [notebooks](https://github.com/malmans2/JHU-MITgcm_Tools/
 
 ### How to cite us:
 #### To cite our dataset, please use this reference: 
-- Almansi et al., "Variability in Circulation and Hydrography in the Denmark Strait", submitted to Journal of Physical Oceanography
+- Almansi, M., T.W. Haine, R.S. Pickart, M.G. Magaldi, R. Gelderloos, and D. Mastropole, 2017: "High-Frequency Variability in the Circulation and Hydrography of the Denmark Strait Overflow from a High-Resolution Numerical Model." J. Phys. Oceanogr., 47, 2999–3013, 
+doi: [https://doi.org/10.1175/JPO-D-17-0129.1](https://doi.org/10.1175/JPO-D-17-0129.1)
 
 #### To cite our Lagrangian Tracking Particle Code, please use these references: 
 - R. Gelderloos, A. S. Szalay, T. W. N. Haine, and G. Lemson, "A fast algorithm for neutrally-buoyant Lagrangian particles in numerical ocean modeling," 2016 IEEE 12th International Conference on e-Science (e-Science), Baltimore, MD, 2016, pp. 381-388.
