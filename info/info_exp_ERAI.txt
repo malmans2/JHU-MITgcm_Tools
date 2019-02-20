@@ -14,7 +14,7 @@ N  | CLASS     | VARIABLE   | DESCRIPTION                                       
 22 | oceSPflx  | oceSPflx   | net surface Salt flux rejected into the ocean during freezing, (+=down)     | g/m^2/s    | /output_glued/
 23 | oceSPDep  | oceSPDep   | Salt plume depth based on density criterion (>0)                            | m          | /output_glued/
 
-39 | EXFhd     | EXFhs      | Sensible heat flux into ocean, >0 increases theta                           | W/m^2      | /output_glued/
+39 | EXFhs     | EXFhs      | Sensible heat flux into ocean, >0 increases theta                           | W/m^2      | /output_glued/
 40 | EXFhl     | EXFhl      | Latent heat flux into ocean, >0 increases theta                             | W/m^2      | /output_glued/
 41 | EXFlwnet  | EXFlwnet   | Net upward longwave radiation, >0 decreases theta                           | W/m^2      | /output_glued/
 42 | EXFswnet  | EXFswnet   | Net upward shortwave radiation, >0 decreases theta                          | W/m^2      | /output_glued/
