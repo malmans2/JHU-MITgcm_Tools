@@ -1,7 +1,8 @@
 # These tools are deprecated in favor of OceanSpy.
 Step-by-step instrtuctions are available at https://oceanspy.readthedocs.io
 
-## Welcome to the SciServer Ocean Modelling User Case
+```
+# Welcome to the SciServer Ocean Modelling User Case
 
 [SciServer](http://www.sciserver.org/) consists of integrated tools that work together to create a full-featured system.
 SciServer is administrated by The Institute for Data Intensive Engineering and Science (IDIES) and The Johns Hopkins University, and is funded by National Science Fundation award ACI-1261715.
@@ -90,4 +91,4 @@ URL: [http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=7870923&isnumber=7
 Having trouble with SciServer or JHU-MITgcm_Tools? Contact us and we’ll help you!
 The [SciServer support page](http://www.sciserver.org/support/) may also be useful.
 
-JHU-MITgcm_Tools is open source: let us know if you find any bugs or if you want to share any notebooks/functions.
+JHU-MITgcm_Tools is open source: let us know if you find any bugs or if you want to share any notebooks/functions.```
