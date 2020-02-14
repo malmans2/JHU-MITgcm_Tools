@@ -1,3 +1,8 @@
+---
+# These tools are deprecated in favor of [OceanSpy](https://oceanspy.readthedocs.io).  
+Step-by-step instructions on how to access SciServer are available are https://oceanspy.readthedocs.io.
+---
+
 # Welcome to the SciServer Ocean Modelling User Case
 
 [SciServer](http://www.sciserver.org/) consists of integrated tools that work together to create a full-featured system.
