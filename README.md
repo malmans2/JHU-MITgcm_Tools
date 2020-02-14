@@ -1,4 +1,7 @@
-# Welcome to the SciServer Ocean Modelling User Case
+# These tools are deprecated in favor of OceanSpy.
+Step-by-step instrtuctions are available at https://oceanspy.readthedocs.io
+
+## Welcome to the SciServer Ocean Modelling User Case
 
 [SciServer](http://www.sciserver.org/) consists of integrated tools that work together to create a full-featured system.
 SciServer is administrated by The Institute for Data Intensive Engineering and Science (IDIES) and The Johns Hopkins University, and is funded by National Science Fundation award ACI-1261715.
